@@ -1,0 +1,68 @@
+[env]
+  TERM = "xterm-256color"
+
+[window]
+opacity = 0.65
+
+[colors.bright]
+black = "#4f5071"
+blue = "#729ce9"
+cyan = "#65dedc"
+green = "#6fd89e"
+magenta = "#7a73d3"
+red = "#d74770"
+white = "#cccfff"
+yellow = "#fcf39c"
+
+[colors.normal]
+black = "#12121f"
+blue = "#83a8ec"
+cyan = "#89e6e4"
+green = "#8fe0b4"
+magenta = "#8983d8"
+red = "#de688a"
+white = "#d4d7ff"
+yellow = "#fdf5b0"
+
+[colors.primary]
+background = "#12121f"
+foreground = "#d4d7ff"
+
+[colors.selection]
+background = "#d4d7ff"
+text = "#12121f"
+
+[cursor]
+style = "Underline"
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "ComicShannsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "ComicShannsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "ComicShannsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "ComicShannsMono Nerd Font"
+style = "Bold Italic"
+
+# [performance]
+# input_latency = 5
+# repaint_throttle = 20
+
+[scrolling]
+history = 2000
+# multiplier = 8.0
+
+[terminal]
+
+[terminal.shell]
+program = "/bin/bash"

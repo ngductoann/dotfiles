@@ -1,0 +1,71 @@
+[global]
+monitor = 0
+follow = mouse
+width = (128, 450)
+height = 132
+
+origin = top-right
+offset = 15x45
+scale = 0
+notification_limit = 5
+
+progress_bar = true
+progress_bar_height = 10
+progress_bar_frame_width = 1
+progress_bar_min_width = 150
+progress_bar_max_width = 300
+progress_bar_corner_radius = 2
+
+indicate_hidden = yes
+separator_height = 6
+separator_color = frame
+
+padding = 12
+horizontal_padding = 12
+text_icon_padding = 0
+frame_width = 2
+frame_color = "#9ccfd8"
+gap_size = 6
+sort = yes
+idle_threshold = 120
+font = ComicShannsMono Nerd Font 12
+markup = full
+format = "<b>%s</b>\n%b"
+alignment = left
+vertical_alignment = center
+
+stack_duplicates = true
+hide_duplicate_count = false
+show_indicators = yes
+
+enable_recursive_icon_lookup = true
+icon_position = left
+min_icon_size = 24
+max_icon_size = 128
+
+sticky_history = yes
+history_length = 25
+browser = $BROWSER
+always_run_script = true
+title = Dunst
+class = Dunst
+
+corner_radius = 6
+ignore_dbusclose = false
+
+[urgency_low]
+background = "#191724"
+foreground = "#e0def4"
+frame_color = "#26233a"
+timeout = 6
+
+[urgency_normal]
+background = "#191724"
+foreground = "#e0def4"
+timeout = 10
+
+[urgency_critical]
+background = "#191724"
+foreground = "#e0def4"
+frame_color = "#eb6f92"
+timeout = 0
