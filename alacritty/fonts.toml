@@ -1,0 +1,20 @@
+[font]
+size = 16
+
+builtin_box_drawing = true
+
+[font.normal]
+family = "ComicShannsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "ComicShannsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "ComicShannsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "ComicShannsMono Nerd Font"
+style = "Bold Italic"

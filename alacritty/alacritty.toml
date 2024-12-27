@@ -1,56 +1,45 @@
-[colors.bright]
-black = "#4C566A"
-blue = "#81A1C1"
-cyan = "#8FBCBB"
-green = "#A3BE8C"
-magenta = "#B48EAD"
-red = "#BF616A"
-white = "#ECEFF4"
-yellow = "#EBCB8B"
+#   █████╗ ██╗      █████╗  ██████╗██████╗ ██╗████████╗████████╗██╗   ██╗
+#  ██╔══██╗██║     ██╔══██╗██╔════╝██╔══██╗██║╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝
+#  ███████║██║     ███████║██║     ██████╔╝██║   ██║      ██║    ╚████╔╝
+#  ██╔══██║██║     ██╔══██║██║     ██╔══██╗██║   ██║      ██║     ╚██╔╝
+#  ██║  ██║███████╗██║  ██║╚██████╗██║  ██║██║   ██║      ██║      ██║
+#  ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝      ╚═╝
+#	gh0stzk - https://github.com/gh0stzk/dotfiles
 
-[colors.normal]
-black = "#3B4252"
-blue = "#81A1C1"
-cyan = "#88C0D0"
-green = "#A3BE8C"
-magenta = "#B48EAD"
-red = "#BF616A"
-white = "#E5E9F0"
-yellow = "#EBCB8B"
+[general]
+import = ["~/.config/alacritty/rice-colors.toml", "~/.config/alacritty/fonts.toml"]
+live_config_reload = true
 
-[colors.primary]
-background = "#2E3440"
-foreground = "#D8DEE9"
+[cursor]
+blink_interval = 550
+unfocused_hollow = false
+thickness = 0.15
 
-# [colors.primary]
-# background = '#1c1d1f'
-# foreground = '#a1aabf'
+[cursor.style]
+blinking = "On"
+shape = "underline"
 
-[env]
-TERM = "xterm-256color"
+[selection]
+save_to_clipboard = true
 
-[font]
-size = 10.0
+[window]
+decorations = "none"
+dynamic_title = true
+opacity = 0.7
+dynamic_padding = true
 
-[font.normal]
-family = "ComicShannsMono Nerd Font"
-style = "Regular"
+[window.padding]
+x = 6
+y = 6
 
-[font.bold]
-family = "ComicShannsMono Nerd Font"
-style = "Bold"
+[scrolling]
+history = 10000
+multiplier = 3
 
-[font.italic]
-family = "ComicShannsMono Nerd Font"
-style = "Italic"
-
-[font.bold_italic]
-family = "ComicShannsMono Nerd Font"
-style = "Bold Italic"
-
-[font.offset]
-x = 0
-y = 1
+[bell]
+animation = "Linear"
+duration = 0
+command = { program = "paplay", args = ["/usr/share/sounds/freedesktop/stereo/dialog-error.oga"] }
 
 [[keyboard.bindings]]
 action = "Paste"
@@ -124,18 +113,9 @@ key = "PageDown"
 mode = "~Alt"
 mods = "None"
 
-[scrolling]
-history = 5000
-
-[window]
-dynamic_padding = true
-opacity = 0.7
-title = "Alacritty"
-
 [window.class]
 general = "Alacritty"
 instance = "Alacritty"
 
-[window.padding]
-x = 4
-y = 4
+[env]
+TERM = "xterm-256color"
